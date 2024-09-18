@@ -1,0 +1,349 @@
+@font-face {
+	font-family: 'Dunkin';
+	src:  url('/fonts/dunkin_bold-webfont.woff2') format('woff2');
+	font-weight: bold;
+  }
+
+  @font-face {
+	font-family: 'Dunkin';
+	src:  url('/fonts/dunkin_sans_bold-webfont.woff2') format('woff2');
+	font-weight: bold;
+  }
+
+  /* @font-face {
+	font-family: 'Dunkin';
+	src:  url('myfont.woff2') format('woff2'),
+		  url('myfont.woff') format('woff');
+		  font-weight; 600; 
+  } */
+
+
+:root {
+	--color-primary: rgb(255, 20, 161);
+	--space-s: 0.5em; 
+	--space-m: 1em;
+	--radius-s: 1.5em;
+}
+
+
+
+body {
+	margin: 1.5em;
+	font-family: 'Dunkin';
+	font-weight: bold;
+	word-spacing: -0.5em;
+}
+
+/* nav {
+	background-color: white;
+	position: fixed;
+	dis
+} */
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	/* margin: 1em; */
+	justify-content: space-around;
+	padding: var(--space-s);
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+}
+
+
+h2 {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 0.7em;
+	color: white;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.welovecoffee {
+	background-color: #ddbd8e;
+	border-radius: 1.5em;
+	margin-bottom: 1.5em;
+	justify-items: center;
+
+	
+}
+
+.coffeeimg {
+	transform: translateX(7em);
+	
+}
+
+.bestel {
+	color: white;
+	background-color: var(--color-primary);
+	border-radius: 1.5em;
+	padding-bottom: 2em;
+
+}
+
+
+.bestel p {
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.bestel a {
+	background-color: white;
+	justify-content: center;
+	text-decoration: none;
+	padding: 0.5em;
+	margin-left: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	border-radius: 0.7em;
+	display: flex;
+	/* display: inline-block; */
+	text-transform: uppercase;
+}
+
+.bestel a:nth-of-type(1) {
+	margin-right: 2em ;
+	color: deeppink;
+}
+
+.bestel a:nth-of-type(2) {
+	color: white;
+	background-color: #f950ad;
+}
+
+.nieuw {
+	color: white;
+	background-color: #92d7ee;
+	border-radius: 1.5em;
+	
+}
+
+h1 {
+	color: #ff3396;
+	align-content: flex-end;
+	text-transform: uppercase;
+}
+
+ol li {
+	padding: 1em;
+	background-color: rgb(238, 238, 238);
+	border-radius: 1em;
+	color: deeppink;
+	list-style-type: none;
+	margin-bottom: 1em;
+	font-weight: bold;
+	font-size: large;
+}
+
+li p {
+	color: gray;
+	font-weight: 100;
+	font-size: medium;
+}
+
+
+
+.list a {
+	background-color: #FF6E0C;
+	text-decoration: none;
+	color: white;
+	padding: 1em;
+	border-radius: 3em;
+	text-align: center ;
+	justify-content: center;
+	display: block;
+	text-transform: uppercase;
+
+}
+
+
+
+
+
+
+/* li:nth-of-type(1){
+	padding: 1em;
+	background-color: rgb(243, 249, 255);
+	border-radius: 1em;
+	border-color: #111;
+	color: deeppink;
+	list-style-type: none;
+	
+
+} */
+
+/* .list li:nth-of-type(2){
+	background-color: blue;
+	
+} */
+
+
+ol {
+	list-style-type: none;
+	padding: 0;
+}
+
+.appjijm {
+	color: white;
+	background-color: #71c5e8;
+	border-radius: 1.5em;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 8em;
+
+}
+
+.bataviastad h3 {
+	color: #f20C90;
+	font-size: 2em;
+}
+
+.bataviastad p {
+color: #AAAAAA;
+}
+
+.bataviastad a {
+	background-color: #FF6E0C;
+	text-decoration: none;
+	color: white;
+	padding: 1em;
+	border-radius: 3em;
+	text-align: center ;
+	justify-content: center;
+	display: block;
+	text-transform: uppercase;
+
+}
+
+.glutenvrij h3 {
+	color: #FF6E0C;
+	font-size: 2em;
+	word-spacing: -0.5em;
+}
+
+.glutenvrij p {
+	color: #AAAAAA;
+	}
+
+
+.glutenvrij a {
+		background-color: #FF6E0C;
+		text-decoration: none;
+		color: white;
+		padding: 1em;
+		border-radius: 3em;
+		text-align: center ;
+		justify-content: center;
+		display: block;
+		text-transform: uppercase;
+	
+	}	
+
+
+.ddnieuws {
+	background-color: #F5F5F5;
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+}	
+
+.ddnieuws h1 {
+	padding-left: 1em;
+}
+
+.batavianews {
+	padding: 0.5em;
+	margin: 1.5em;
+	border: solid, #ececec, 4px;
+	border-radius: 1em;
+
+}
+
+
+.batavianews a {
+margin: 3em;
+margin-left: 0em;
+
+background-color: #DA1884;
+border-radius: 4em;
+color: white;
+padding: 0.5em;
+text-decoration: none;
+font-size: 0.7em;
+padding-left: 1em;
+padding-right: 1em;
+}
+
+/* section:nth-of-type(1) article:nth-of-type(3) {
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+

@@ -276,6 +276,48 @@ padding-left: 1em;
 padding-right: 1em;
 }
 
+.storefinder {
+	color: white;
+	background-color: #f20C90;
+	border-radius: 1.5em;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 8em;
+	padding-bottom: 2em;
+	text-transform: uppercase;
+	margin-bottom: -1em;
+}
+
+.map {
+	border: solid, white, 10px;
+	border-radius: 50%;
+	
+}
+
+.badge {
+	border: none;
+	z-index: 3;
+	border-radius: 50%;
+	transform: translateX(11em) translateY(-14em);
+	rotate: -20deg;
+	box-shadow: 1px 5px #111;
+
+	
+	
+}
+
+.storefinder a {
+	text-decoration: none;
+	background-color: white;
+	border-radius: 3em;
+	padding: 1em;
+	margin-top: 1em;
+	color: #f20C90;
+	
+	font-size: small;
+
+}
+
 /* section:nth-of-type(1) article:nth-of-type(3) {
 
 } */

@@ -1,0 +1,453 @@
+@font-face {
+	font-family: 'Dunkin';
+	src:  url('../fonts/dunkin_bold-webfont.woff2') format('woff2');
+	font-weight: bold;
+  }
+
+  @font-face {
+	font-family: 'Dunkin';
+	src:  url('../fonts/dunkin_sans_bold-webfont.woff2') format('woff2');
+	font-weight: bold;
+  }
+
+  /* @font-face {
+	font-family: 'Dunkin';
+	src:  url('myfont.woff2') format('woff2'),
+		  url('myfont.woff') format('woff');
+		  font-weight; 600; 
+  } */
+
+
+:root {
+	--color-primary: rgb(255, 20, 161);
+	--space-s: 0.5em; 
+	--space-m: 1em;
+	--radius-s: 1.5em;
+}
+
+
+
+body {
+	margin: 1.5em;
+	font-family: 'Dunkin';
+	font-weight: bold;
+	
+}
+
+/* nav {
+	background-color: white;
+	position: fixed;
+	dis
+} */
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	/* margin: 1em; */
+	justify-content: space-around;
+	padding: var(--space-s);
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+}
+
+
+h2 {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 0.7em;
+	color: white;
+	font-size: 3em;
+	text-transform: uppercase;
+	line-height: 1em;
+	letter-spacing: -0.05em;
+}
+
+.welovecoffee {
+	background-color: #ddbd8e;
+	border-radius: 1.5em;
+	margin-bottom: 1.5em;
+	justify-items: center;
+
+	
+}
+
+.coffeeimg {
+	transform: translateX(7em);
+	
+}
+
+h1 {
+	font-size: 3.5em;
+	line-height: 1em;
+}
+
+.greybg {
+	background-color: #0000000a;
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+}
+	
+
+.bestel {
+	color: white;
+	background-color: var(--color-primary);
+	border-radius: 1.5em;
+	padding-bottom: 2em;
+	margin: 1.5em;
+
+}
+
+
+
+.bestel p {
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.bestel a {
+	background-color: white;
+	justify-content: center;
+	display: flex;
+
+	text-decoration: none;
+	padding: 0.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 0.7em;
+	text-transform: uppercase;
+}
+
+.bestel a:nth-of-type(1) {
+	margin-right: 2em ;
+	color: deeppink;
+}
+
+.bestel a:nth-of-type(2) {
+	color: white;
+	background-color: #f950ad;
+}
+
+.nieuw {
+	color: white;
+	background-color: #92d7ee;
+	border-radius: 1.5em;
+	margin: 1.5em;
+
+	
+}
+
+h1 {
+	color: #ff3396;
+	align-content: flex-end;
+	text-transform: uppercase;
+	 margin-left: 0.45em;
+}
+
+ol li {
+	padding: 1em;
+	background-color: rgb(255, 255, 255);
+	border-radius: 1.5em;
+	color: deeppink;
+	list-style-type: none;
+	margin-bottom: 1em;
+	font-weight: bold;
+	font-size: large;
+	margin: 1.5em;
+
+}
+
+li p {
+	color: gray;
+	font-weight: 100;
+	font-size: medium;
+}
+
+
+
+.list a {
+	background-color: #FF6E0C;
+	text-decoration: none;
+	color: white;
+	padding: 1em;
+	border-radius: 3em;
+	text-align: center ;
+	justify-content: center;
+	display: block;
+	text-transform: uppercase;
+	margin: 1.5em;
+
+
+}
+
+
+
+
+
+
+/* li:nth-of-type(1){
+	padding: 1em;
+	background-color: rgb(243, 249, 255);
+	border-radius: 1em;
+	border-color: #111;
+	color: deeppink;
+	list-style-type: none;
+	
+
+} */
+
+/* .list li:nth-of-type(2){
+	background-color: blue;
+	
+} */
+
+
+ol {
+	list-style-type: none;
+	padding: 0;
+}
+
+.appjijm {
+	color: white;
+	background-color: #71c5e8;
+	border-radius: 1.5em;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 8em;
+	margin: 1.5em;
+
+
+}
+
+.bataviastad h3 {
+	color: #f20C90;
+	font-size: 2em;
+}
+
+.bataviastad p {
+color: #AAAAAA;
+}
+
+.bataviastad a {
+	background-color: #FF6E0C;
+	text-decoration: none;
+	color: white;
+	padding: 1em;
+	border-radius: 3em;
+	text-align: center ;
+	justify-content: center;
+	display: block;
+	text-transform: uppercase;
+
+}
+
+.glutenvrij h3 {
+	color: #FF6E0C;
+	font-size: 2em;
+	word-spacing: -0.5em;
+}
+
+.glutenvrij p {
+	color: #AAAAAA;
+	}
+
+
+.glutenvrij a {
+		background-color: #FF6E0C;
+		text-decoration: none;
+		color: white;
+		padding: 1em;
+		border-radius: 3em;
+		text-align: center ;
+		justify-content: center;
+		display: block;
+		text-transform: uppercase;
+	
+	}	
+
+
+.ddnieuws {
+	background-color: #F5F5F5;
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+}	
+
+.ddnieuws h1 {
+	padding-left: 1em;
+}
+
+.batavianews {
+	padding: 0.5em;
+	margin: 1.5em;
+	border: solid, #ececec, 4px;
+	border-radius: 1em;
+
+}
+
+
+.batavianews a {
+margin: 3em;
+margin-left: 0em;
+
+background-color: #DA1884;
+border-radius: 4em;
+color: white;
+padding: 0.5em;
+text-decoration: none;
+font-size: 0.7em;
+padding-left: 1em;
+padding-right: 1em;
+}
+
+.storefinder {
+	color: white;
+	background-color: #f20C90;
+	border-radius: 1.5em;
+	justify-content: center;
+	text-align: center;
+
+	padding-bottom: 2em;
+	text-transform: uppercase;
+	margin-bottom: 7.5em;
+	
+}
+
+.map {
+	border: solid, white, 10px;
+	border-radius: 50%;
+	margin-bottom: -6em;
+	margin-top: 0em;
+}
+
+.badge {
+	border: none;
+	border-radius: 50%;
+	transform: translateX(9em) translateY(-6.5em);
+	rotate: -20deg;
+	box-shadow: 1px 5px 5px #1111115c;
+	
+}
+
+.storefinder h3 {
+	margin-top: 1em;
+
+}
+
+.storefinder a {
+	text-decoration: none;
+	background-color: white;
+	border-radius: 3em;
+	padding: 1em;
+	margin-top: 1em;
+	color: #f20C90;
+	
+	font-size: small;
+
+}
+
+footer {
+	color: white;
+	background-color: #FF6E0C;
+
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 8em;
+    padding-bottom: 9em;
+	text-transform: uppercase;
+	margin: -1.5em;
+	}
+
+footer img {
+	border-radius: 50%;
+	transform: translateY(-6em);
+	margin-bottom: -5em;
+	margin-top: 2em;
+	box-shadow: 1px 5px 5px #1111115c;
+}	
+
+footer a {
+	text-decoration: none;
+	color: white ;
+	background-color: #e8412ed3 ;
+	border-radius: 3em;
+	padding: 1.7em;
+	display: block;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: smaller;
+	
+}
+
+/* section:nth-of-type(1) article:nth-of-type(3) {
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+

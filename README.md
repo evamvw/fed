@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Mijn niveau is de Blauwe piste. Ik codeer niet in mijn vrije tijd en 
 
   #### Je focus:
-  surface plane
+  hier je focus (kies uit responsive óf surface plane)
  
 </details>
 

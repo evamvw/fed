@@ -14,11 +14,31 @@
   }
 
 :root {
-	--color-primary:#f20C90 ;
-	--space-s: 0.5em; 
-	--space-m: 1em;
-	--radius-s: 1.5em;
+
+	color-scheme: light dark;
+
+	--color-headings1:#f20C90 ;
+
+	--bg:light-dark:(white);
+	--clr: light-dark:(black);
 }
+
+html:has([value="light"]:checked) {
+	color-scheme: Light;
+	--bg: white;
+	--clr: black;
+}
+
+html:has([value="dark"]:checked) {
+	color-scheme: dark;
+	--bg: green;
+}
+
+	
+	/* --color-links:; */
+	/* --space-s: 0.5em; 
+	--space-m: 1em;
+	--radius-s: 1.5em; */
 
 body {
 	margin: 1.5em;
@@ -37,10 +57,40 @@ nav {
 	left: 0em;
 	position: fixed;
 	z-index: 3;
-	display: flex;
 	top:0;
+	margin-top: 7em;
 	border: solid, rgb(247, 247, 247), ;
+	top: calc(-113.5/16 * 1rem);
 }
+
+nav ul li button {
+	background-color: white;
+	border: none;
+	size: 2em;
+	transform: translateX(-1em);
+}
+
+nav p {
+	background-color: #FF6E0C;
+	color: white;
+	padding: 1em;
+	padding-right:5em;
+	font-size: 0.75em;
+	margin-top: -0.2em ;
+	margin-left: -0.2em;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	position: relative;
+	position: sticky;
+	top: calc(-113.5/16 * 1rem);
+}
+
+nav p a{
+	color: #0072ce;
+	padding-left: 0.5em;
+}
+
 
 nav ul {
 	list-style-type: none;
@@ -57,6 +107,85 @@ nav ul li {
 	padding-top: 0.5em;
 }
 
+.hamburger{
+	background-color: rgb(253, 253, 253);	
+	position: absolute;
+	top: 20;
+	z-index: 5;
+	width: 100vw;
+	height: 100vh;
+	transform: translateY(200vw);
+	transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hamburger ul li a{
+	color: #512d00;
+	text-decoration: none;
+	flex-direction: column;
+	text-align: center;
+	display: flex;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: 'Dunkin';
+	padding-left: 1em;
+	
+}
+
+.hamburger div {
+	background-color: #f4f2f2;
+	padding-bottom: 10em;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 3em;
+	margin-top: 3em;
+	border-top-right-radius: 150px 50px;
+	border-top-left-radius: 150px 50px;
+}
+
+.hamburger button {
+	background-color: rgb(240, 240, 240);
+	color: blaCK;
+	border: none;
+	transform: translateY(-4.1em) translateX(22.9em);
+	padding: 0.6em 1.4em;
+	border-radius: 2em;
+	
+	
+}
+
+.hamburger div a{
+	background-color: white;
+	padding: 0.5em;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+	border-radius: 8em;
+}
+
+.hamburger div a:nth-of-type(1) {
+	margin-right: 1em;
+}
+
+.hamburger div a:nth-of-type(2) {
+	margin-right: 1em;
+}
+
+.hamburger div a:nth-of-type(3) {
+ padding-left: 1em;
+ padding-right: 1em;
+}
+
+header nav article ul li {
+	color: #111;
+}
+
+
+nav article.active {
+	transform: translateY(0);
+}
+
+
+
 h2 {
 	align-items: center;
 	justify-content: center;
@@ -72,10 +201,9 @@ h2 {
 .welovecoffee {
 	background-color: #ddbd8e;
 	border-radius: 1.5em;
-
 	margin-bottom: -1em;
 	padding-bottom:2em ;
-	margin-top: 7em;
+	margin-top: 9em;
 	justify-items: center;	
 	overflow: hidden;
 	object-fit: contain;
@@ -116,7 +244,7 @@ h1 {
 
 .bestel {
 	color: white;
-	background-color: var(--color-primary);
+	background-color: var(--color-headings1);
 	border-radius: 1.5em;
 	padding-bottom: 2em;
 	margin: 1.5em;
@@ -182,11 +310,17 @@ h1 {
 	justify-content: center;
 	display: flex;
 	transform: translateX(1.5em) translateY(2em);
-	
+}
+
+.list div svg {
+	width: 1.5em;
+	z-index: 100;
+	color: rgb(0, 0, 0);
 }
 
 #orangemiddle {
 	background-color:#FF6E0C;
+
 }
 
 ol li {
@@ -230,6 +364,10 @@ li p {
 	display: block;
 	text-transform: uppercase;
 	margin: 1.5em;
+}
+
+svg {
+	fill: rgb(205, 26, 26);
 }
 
 ol {
@@ -364,7 +502,7 @@ padding-right: 1em;
 
 	padding-bottom: 2em;
 	text-transform: uppercase;
-	margin-bottom: 7.5em;
+	margin-bottom: 10em;
 	
 }
 
@@ -404,7 +542,7 @@ padding-right: 1em;
 	margin-bottom: 1em;
 	padding: 1.3em;
 	margin: -2em;
-	z-index: 3;
+	z-index: 2;
 	position: fixed;
     top: auto;
     bottom: 4%;
@@ -425,13 +563,11 @@ padding-right: 1em;
 	text-transform: uppercase;
 	font-size: small;
 
-
 }
 
 .footerhome {
 	color: white;
 	background-color: #FF6E0C;
-
 	justify-content: center;
 	text-align: center;
 	margin-bottom: 8em;
@@ -482,6 +618,35 @@ padding-right: 1em;
 	height: 2em;
 	width: 2em;
 	padding-top: -2em;
+}
+
+
+.rotatinglogo {
+	background-color: rgb(241, 241, 241);
+	border-radius: 50%;
+	margin-top: -4em;
+	box-shadow: 1px 5px 5px #1111115c;
+	margin-left: 7.1em;
+	margin-right: 6.7em;
+	z-index: 4;
+	
+
+
+	animation-name: rondje;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rondje {
+	0% {
+
+		transform: rotate(0deg);
+	}
+	100%{
+		
+		transform: rotate(360deg);
+	}
 }
 
 

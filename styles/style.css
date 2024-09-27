@@ -18,6 +18,9 @@
 	color-scheme: light dark;
 
 	--color-headings1:#f20C90 ;
+	--color-bg-links:#FF6E0C; 
+	--color-bg-header:#FF6E0C; 
+	--color-welovecoffee:#ddbd8e;
 
 	--bg:light-dark:(white);
 	--clr: light-dark:(black);
@@ -32,6 +35,10 @@ html:has([value="light"]:checked) {
 html:has([value="dark"]:checked) {
 	color-scheme: dark;
 	--bg: green;
+	--color-headings1:rgb(107, 63, 135) ;
+	--color-bg-header: #110046 ;
+	--color-bg-links: #f20C90 ;
+	--color-welovecoffee:#9ab695;
 }
 
 	
@@ -51,14 +58,16 @@ p {
 	font-family: "Dunkin-sans";
 }
 
+header {
+	position: fixed;
+    top:0;
+	left: 0;
+	z-index: 3;
+
+}
 
 nav {
 	background-color: rgb(255, 255, 255);
-	left: 0em;
-	position: fixed;
-	z-index: 3;
-	top:0;
-	margin-top: 7em;
 	border: solid, rgb(247, 247, 247), ;
 	top: calc(-113.5/16 * 1rem);
 }
@@ -70,23 +79,19 @@ nav ul li button {
 	transform: translateX(-1em);
 }
 
-nav p {
-	background-color: #FF6E0C;
+header p {
+	background-color: var(--color-bg-header);
 	color: white;
-	padding: 1em;
-	padding-right:5em;
 	font-size: 0.75em;
-	margin-top: -0.2em ;
-	margin-left: -0.2em;
 	align-items: center;
 	justify-content: center;
 	display: flex;
 	position: relative;
-	position: sticky;
-	top: calc(-113.5/16 * 1rem);
+	padding: 1em;
+	margin: 0em;
 }
 
-nav p a{
+header p a{
 	color: #0072ce;
 	padding-left: 0.5em;
 }
@@ -184,6 +189,10 @@ nav article.active {
 	transform: translateY(0);
 }
 
+label {
+	background-color: none;
+	
+}
 
 
 h2 {
@@ -199,11 +208,11 @@ h2 {
 }
 
 .welovecoffee {
-	background-color: #ddbd8e;
+	background-color: var(--color-welovecoffee);
 	border-radius: 1.5em;
 	margin-bottom: -1em;
 	padding-bottom:2em ;
-	margin-top: 9em;
+	margin-top: 11em;
 	justify-items: center;	
 	overflow: hidden;
 	object-fit: contain;
@@ -291,6 +300,7 @@ h1 {
 
 .nieuw img {
 	transform: translateY(0.3em);
+	border-radius: 1.5em;
 }
 
 h1 {
@@ -302,7 +312,7 @@ h1 {
 
 
 .list div:nth-of-type(1) {
-	background-color: #f20C90;
+	background-color: var(--color-headings1);
 	border-radius: 50%;
 	height: 3em;
 	width: 3em;
@@ -310,6 +320,10 @@ h1 {
 	justify-content: center;
 	display: flex;
 	transform: translateX(1.5em) translateY(2em);
+}
+
+.list img {
+	width: 1.5em;
 }
 
 .list div svg {
@@ -336,7 +350,7 @@ ol li {
 }
 
 ol li:nth-of-type(3) div:nth-of-type(1){
-	transform: translateY(1em) translateX(1em);
+	transform: translateY(1em) translateX(1.5em);
 }
 
 ol li h3{
@@ -354,7 +368,7 @@ li p {
 }
 
 .list a {
-	background-color: #FF6E0C;
+	background-color: var(--color-bg-links);
 	text-decoration: none;
 	color: white;
 	padding: 1em;
@@ -366,8 +380,28 @@ li p {
 	margin: 1.5em;
 }
 
-svg {
-	fill: rgb(205, 26, 26);
+.list button {
+	background-color: var(--color-bg-links);
+	color: white;
+	border-radius: 3em;
+	width: 5em;
+	height: 2em;
+	transform: translateY(-3em) translateX(1.5em);
+	border: none;
+	margin-bottom: -1.5em;
+}
+
+#Svg {
+	fill: rgb(255, 255, 255); /* Wit */
+	width: 1.5em;
+	height: 1.5em;
+	transition: fill 0.3s ease;
+}
+
+#Svg.active {
+	fill: #71006d;
+	width: 2em;
+	height: 2em;
 }
 
 ol {
@@ -404,7 +438,7 @@ ol {
 }
 
 .bataviastad h3 {
-	color: #f20C90;
+	color: var(--color-bg-links);
 	font-size: 1.9em;
 	margin-top: -1em;
 	line-height: 1.3em;
@@ -419,7 +453,7 @@ margin-bottom: 1.5em;
 }
 
 .bataviastad a {
-	background-color: #FF6E0C;
+	background-color: var(--color-bg-links);;
 	text-decoration: none;
 	color: white;
 	padding: 1em;
@@ -449,7 +483,7 @@ margin-bottom: 1.5em;
 }
 
 .bataviastad div:nth-of-type(2) {
-	background-color:#f20C90;
+    background-color: #f20C90;
 	margin-top: 3em;
 }
 
@@ -495,7 +529,7 @@ padding-right: 1em;
 
 .storefinder {
 	color: white;
-	background-color: #f20C90;
+	background-color: var(--color-headings1);
 	border-radius: 1.5em;
 	justify-content: center;
 	text-align: center;
@@ -552,7 +586,7 @@ padding-right: 1em;
 }
 
 .ordernow a{
-	background-color: #FF6E0C;
+	background-color: var(--color-bg-header);
 	text-decoration: none;
 	color: white;
 	padding: 1.5em;
@@ -941,4 +975,29 @@ filter:brightness(60%) ;
 .socials a {
 	padding: 0.5em;
 }
+
+
+
+.fade {
+	/* transform: translateY(50px);
+	opacity: 0;
+	transition-property: transform, opacity;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition: opacity 0.6s ease-in-out; */
+
+	transform: translateY(50px); 
+    opacity: 0; 
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out; 
+}
+
+.fade.in-view {
+	/* transform: none;
+	opacity: 1; */
+	transform: translateY(0); 
+    opacity: 1;
+}
+
+
+
 

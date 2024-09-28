@@ -40,12 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-    <img src="images/eerstescherm.png" width="375px" alt="Homepagina van Dunkin">
+    <img src="images-readme/eerstescherm.png" width="375px" alt="Homepagina van Dunkin">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="images/tweedescherm1.png" width="375px" alt="Werken bij Dunkin">
-  <img src="images/tweedescherm2.png" width="375px" alt="Werken bij Dunkin">
+  <img src="images-readme/tweedescherm1.png" width="375px" alt="Werken bij Dunkin">
+  <img src="images-readme/tweedescherm2.png" width="375px" alt="Werken bij Dunkin">
  
 </details>
 
@@ -57,8 +57,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  - Screenreader: 
+    - Bij hover worden de kopjes niet genoemd.
+    - Geeft foute instructies: om te klikken gebruik deze toets. (maar werkt niet)
+    - Er wordt heel veel gezegd: chaotisch.
+    - Moet iets selecteren voor dat het opgenoemd wordt.
+    - Laad-schermen worden afbeeldingen genoemd.
+    - Wanneer ik op nieuwe pagina kom gaat die alle linkjes langs.
+    - Zegt veel “Ga terug”
 
+  - WCAG checklist
+    - Er wordt weinig/geen alt gebruikt
+    - Er worden voor elke pagina unieke titels gegeven 
+    - focus style op keyboard werkt, maar onlogische volgorde 
+    - headings worden niet goed gebruikt 
+    - List wordt ook niet gebruikt op elementen die het wel nodig hebben
+    - Heel veel divs en spans 
+    - Geen audio of video 
+    - <a> wordt goed gerbuikt 
+    - Button wordt niet goed gebruikt
+    - Subtiele animaties 
+    
 </details>
 
 
@@ -129,7 +148,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-   <img src="images/stand-van-zaken.png" width="375px" alt="Hoe mijn website er nu uit ziet">
+   <img src="images-readme/stand-van-zaken.png" width="375px" alt="Hoe mijn website er nu uit ziet">
 
   - In een van de lessen heb ik nog hulp kunnen krijgen met het inladen van de juiste font. Ik heb alleen nu het probleem dat het font niet dunner wordt. 
   - Toen ik het juiste font in mijn site zette, kwamen twee linkjes onder elkaar te staan in plaats van naast elkaar zoals dat vorheen was. Hoe verander ik dit? 
@@ -226,23 +245,75 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="images-readme/homescreen1.png" width="375px" alt="Layout van de homepagina">
 
+  <img src="images-readme/homescreen2.png" width="375px" alt="layout van de homepagina">
+
+  <img src="images-readme/homescreen3.png" width="375px" alt="layout van de homepagina">
+
+  <img src="images-readme/homescreen4.png" width="375px" alt="layout van de homepagina">
+
+  <img src="images-readme/homescreen5.png" width="375px" alt="layout van de homepagina">
+
+   <img src="images-readme/hamburgermenu.png" width="375px" alt="hamburger menu">
+   
+  <img src="images-readme/werken.png" width="375px" alt="intro van tweede pagina">
+  <img src="images-readme/werken2.png" width="375px" alt="layout tweede pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  - Aan het begin van dit vak had ik nog een beetje moeite met de opmaak van alle blokken op de homepagina. Maar na veel proberen en oefenen lukte mij dit steeds beter en sneller. Ik heb bijvoorbeeld geleerd hoe je makkelijk elementen kan centreren. Hierbij ben ik ook beter gaan begrijpen hoe de plaatsing van elementen werken (margin, padding, border. Maar ook met transform, flex, grid, etc). 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="images-readme/homescreen1.png" width="375px" alt="Layout van de homepagina">
+
+  <img src="images-readme/homescreen2.png" width="375px" alt="layout van de homepagina">
+
+  <img src="images-readme/homescreen3.png" width="375px" alt="layout van de homepagina">
+
+  <img src="images-readme/homescreen4.png" width="375px" alt="layout van de homepagina">
+
+  <img src="images-readme/homescreen5.png" width="375px" alt="layout van de homepagina">
+
+  <img src="images-readme/footer.png" width="375px" alt="footer">
+
+   - Ook heb ik geleerd hoe costum properties/ light-dark-mode werkt. Dit vond ik eerst lastig, maar nadat ik hier wat vragen over had gesteld, begreep ik het en ging het toevoegen hiervan ook goed. Ook heb ik geleerd hoe je met svg-images om moet gaan en hoe je deze kan stijlen en animeren. Het dowloaden van fonts is me ook een stuk duidelijker geworden. Ik begrijp nu veel beter hoe je deze in je html/css zet en hoe je deze bewerkt. 
+
+  <img src="images-readme/light-dark.png" width="375px" alt="Light-dark">
+
+  <img src="images-readme/svg-voorbeeld.png" width="375px" alt="geanimeerde svg">
+
+  <img src="images-readme/fonts.png" width="375px" alt="verschillende fonts">
+
+
+  - Verder heb ik bij dit vak heel veel geleerd over animaties, transitions, JS, audio, etc. Soms gingen sommige dingen niet helemaal goed, maar met hulp in de les of onderzoek op het internet ben ik er bij de meeste dingen wel uitgekomen. 
+
+ <img src="images-readme/animatie.png" width="375px" alt="ronddraaiende animatie">
+
+<img src="images-readme/popup.png" width="375px" alt="pop-up">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+Er zijn helaas ook wat dingen niet gelukt, namelijk: 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+- een scrol-animatie. Ik heb van de docent een linkje gekregen van een site waar helemaal wordt uitgelegd hoe je dit zou moeten maken. Ik heb van alles geprobeerd, maar het bleef maar mislukken. Ook met verder onderzoek ben ik er niet uitgekomen. Uiteindelijk heb ik besloten om dit te laten en deze te vervangen met een ander surface-plane onderwerp, namelijk een pop-up. 
+
+<img src="images-readme/fadecode.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+
+<img src="images-readme/fadecode1.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+
+<img src="images-readme/fadecode2.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+
+<img src="images-readme/fadecode3.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+
+<img src="images-readme/fadecode4.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+
+- Ook is het me helaas niet gelukt om het bovenste balkje op mijn site mee te laten bewegen met de scrol richting. Ook hier heb ik van de docent een codepen linkje gekregen. Toen dit eerst niet lukte, was ik erachter gekomen dat ik de p van de <nav> naar de <header> moest verplaatsen. Na heel veel verschuiven en proberen heb ik deze uiteindelijk op de goede plek gekregen. Maar het mee scrollen van deze balk is me uiteindelijk helaas niet gelukt. Bij het toevoegen hiervan, verschoof de balk of deed die niks. Wel pakte die soms de "order now" balk onderin. 
+
+<img src="images-readme/header.png" width="375px" alt="header en het oranje balkje dat mee moest schuiven">
+
+- Helaas is het me ook niet gelukt om de foto's op de tweede pagina niet te laten vervormen. Ik heb gebruikt gemaakt van object-fit, overlay:hidden, grid, en nog meer. Maar de foto's bleven vervormd. 
+
+<img src="images-readme/fotogroepx.png" width="375px" alt="vervormde foto's">
 </details>
-
-
-
 
 
 ## Bronnenlijst
@@ -254,8 +325,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://dev.to/jslim/fading-up-sections-using-intersection-observer-3fhj
+  Voor een fade-scrol animatie. 
+  2. https://chatgpt.com/c/66f6ec98-7040-8002-8e17-ffeaf060c985
+  Voor het toevoegen van audio en svg-animatie
+  3. https://chatgpt.com/c/66f70871-8fac-8002-81da-0f3d03806e23
+  Voor het werkend laten maken van een svg-animatie
+  4. https://chatgpt.com/c/66f7b429-ca0c-8002-9b86-cbeac6ba9abc
+  Voor het maken van een pop-up
+  5. Andrea 
+  Voor het maken van een hamburger menu 
+  6. Ali (studentassistent)
+  Voor het maken van een hamburger menu 
+  7. https://dlo.mijnhva.nl/d2l/le/content/609314/Home
+  Voor codepen opdrachten. 
+  
 
 </details>

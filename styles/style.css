@@ -14,13 +14,13 @@
   }
 
 :root {
-
 	color-scheme: light dark;
 
 	--color-headings1:#f20C90 ;
 	--color-bg-links:#FF6E0C; 
 	--color-bg-header:#FF6E0C; 
 	--color-welovecoffee:#ddbd8e;
+	--color-p: #000000;
 
 	--bg:light-dark:(white);
 	--clr: light-dark:(black);
@@ -34,31 +34,25 @@ html:has([value="light"]:checked) {
 
 html:has([value="dark"]:checked) {
 	color-scheme: dark;
-	--bg: green;
+
 	--color-headings1:rgb(107, 63, 135) ;
 	--color-bg-header: #110046 ;
 	--color-bg-links: #f20C90 ;
 	--color-welovecoffee:#9ab695;
+	--color-p: #000000;
 }
-
-	
-	/* --color-links:; */
-	/* --space-s: 0.5em; 
-	--space-m: 1em;
-	--radius-s: 1.5em; */
 
 body {
 	margin: 1.5em;
 	font-family: 'Dunkin';
 	font-weight: bold;
-	
 }
 
 p {
 	font-family: "Dunkin-sans";
 }
 
-header {
+.header {
 	position: fixed;
     top:0;
 	left: 0;
@@ -69,7 +63,7 @@ header {
 nav {
 	background-color: rgb(255, 255, 255);
 	border: solid, rgb(247, 247, 247), ;
-	top: calc(-113.5/16 * 1rem);
+	/* top: calc(-113.5/16 * 1rem); */
 }
 
 nav ul li button {
@@ -88,6 +82,7 @@ header p {
 	display: flex;
 	position: relative;
 	padding: 1em;
+	padding-right: 6em;
 	margin: 0em;
 }
 
@@ -96,13 +91,11 @@ header p a{
 	padding-left: 0.5em;
 }
 
-
 nav ul {
 	list-style-type: none;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	
 }
 
 nav ul li {
@@ -132,8 +125,7 @@ nav ul li {
 	text-transform: uppercase;
 	font-size: 2em;
 	font-family: 'Dunkin';
-	padding-left: 1em;
-	
+	padding-left: 1.3em;
 }
 
 .hamburger div {
@@ -148,16 +140,14 @@ nav ul li {
 	border-top-left-radius: 150px 50px;
 }
 
-.hamburger button {
+/* .hamburger button {
 	background-color: rgb(240, 240, 240);
 	color: blaCK;
 	border: none;
 	transform: translateY(-4.1em) translateX(22.9em);
 	padding: 0.6em 1.4em;
 	border-radius: 2em;
-	
-	
-}
+} */
 
 .hamburger div a{
 	background-color: white;
@@ -180,10 +170,9 @@ nav ul li {
  padding-right: 1em;
 }
 
-header nav article ul li {
+/* header nav article ul li {
 	color: #111;
-}
-
+} */
 
 nav article.active {
 	transform: translateY(0);
@@ -191,11 +180,9 @@ nav article.active {
 
 label {
 	background-color: none;
-	
 }
 
-
-h2 {
+.h2 {
 	align-items: center;
 	justify-content: center;
 	display: flex;
@@ -239,10 +226,10 @@ h2 {
 
 }
 
-h1 {
+/* .h1 {
 	font-size: 3.5em;
 	line-height: 1em;
-}
+} */
 
 .greybg {
 	background-color: #0000000a;
@@ -303,11 +290,14 @@ h1 {
 	border-radius: 1.5em;
 }
 
-h1 {
+.h2-opmaak {
 	color: #ff3396;
-	align-content: flex-end;
 	text-transform: uppercase;
-	 margin-left: 0.45em;
+	font-size: 3.5em;
+	margin-left: 0.5em;
+	margin-top: 1em;
+	line-height: 0.9em;
+	font-family: 'Dunkin';
 }
 
 
@@ -344,9 +334,10 @@ ol li {
 	list-style-type: none;
 	font-weight: bold;
 	font-size: large;
-	margin: 1.5em;
+	margin: 0.8em 1.5em;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
+	
 }
 
 ol li:nth-of-type(3) div:nth-of-type(1){
@@ -356,7 +347,6 @@ ol li:nth-of-type(3) div:nth-of-type(1){
 ol li h3{
 	text-transform: uppercase;
 	font-size: 1em;
-	
 }
 
 li p {
@@ -374,7 +364,6 @@ li p {
 	padding: 1em;
 	border-radius: 3em;
 	text-align: center ;
-	justify-content: centesr;
 	display: block;
 	text-transform: uppercase;
 	margin: 1.5em;
@@ -446,10 +435,10 @@ ol {
 }
 
 .bataviastad p {
-color: #AAAAAA;
-font-family: "Dunkin-sans";
-margin-top: -1em;
-margin-bottom: 1.5em;
+	color: #AAAAAA;	
+	font-family: "Dunkin-sans";
+	margin-top: -1em;
+	margin-bottom: 1.5em;
 }
 
 .bataviastad a {
@@ -491,10 +480,9 @@ margin-bottom: 1.5em;
 	background-color: #F5F5F5;
 	margin-left: -1.5em;
 	margin-right: -1.5em;
-
 }	
 
-.ddnieuws h1 {
+.ddnieuws h2 {
 	padding-top: 0.5em;
 	padding-bottom: -2em;
 }
@@ -502,9 +490,7 @@ margin-bottom: 1.5em;
 .scrol {
 	display: flex;
 	overflow: auto;
-
 }
-
 
 .batavianews {
 	padding: 0.5em;
@@ -513,18 +499,21 @@ margin-bottom: 1.5em;
 	border-radius: 1em;
 }
 
+.batavianews p {
+	color: var(--color-p);
+}
 
 .batavianews a {
-margin: 3em;
-margin-left: 0em;
-background-color: #DA1884;
-border-radius: 4em;
-color: white;
-padding: 0.5em;
-text-decoration: none;
-font-size: 0.7em;
-padding-left: 1em;
-padding-right: 1em;
+	margin: 3em;
+	margin-left: 0em;
+	background-color: #DA1884;
+	border-radius: 4em;
+	color: white;
+	padding: 0.5em;
+	text-decoration: none;
+	font-size: 0.7em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .storefinder {
@@ -533,11 +522,9 @@ padding-right: 1em;
 	border-radius: 1.5em;
 	justify-content: center;
 	text-align: center;
-
 	padding-bottom: 2em;
 	text-transform: uppercase;
 	margin-bottom: 10em;
-	
 }
 
 .map {
@@ -550,15 +537,13 @@ padding-right: 1em;
 .badge {
 	border: none;
 	border-radius: 50%;
-	transform: translateX(9em) translateY(-6.5em);
+	transform: translateX(9em) translateY(-8.7em);
 	rotate: -20deg;
 	box-shadow: 1px 5px 5px #1111115c;
-	
 }
 
 .storefinder h3 {
 	margin-top: 1em;
-
 }
 
 .storefinder a {
@@ -571,34 +556,6 @@ padding-right: 1em;
 	font-size: small;
 }
 
-.ordernow {
-	background-color:#f5f5f5;
-	margin-bottom: 1em;
-	padding: 1.3em;
-	margin: -2em;
-	z-index: 2;
-	position: fixed;
-    top: auto;
-    bottom: 4%;
-	left: 8%;
-	right: 8%;
-
-}
-
-.ordernow a{
-	background-color: var(--color-bg-header);
-	text-decoration: none;
-	color: white;
-	padding: 1.5em;
-	border-radius: 3em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: uppercase;
-	font-size: small;
-
-}
-
 .footerhome {
 	color: white;
 	background-color: #FF6E0C;
@@ -608,7 +565,7 @@ padding-right: 1em;
     padding-bottom: 0em;
 	text-transform: uppercase;
 	margin: -1.5em;
-	}
+}
 
 .footerhome article img {
 	border-radius: 50%;
@@ -664,8 +621,6 @@ padding-right: 1em;
 	margin-right: 6.7em;
 	z-index: 4;
 	
-
-
 	animation-name: rondje;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -684,37 +639,113 @@ padding-right: 1em;
 }
 
 
+.ordernow {
+	background-color:#f5f5f5;
+	padding: 1.3em;
+	margin: -2em;
+	z-index: 2;
+	position: fixed;
+    top: auto;
+    bottom: 4%;
+	left: 8%;
+	right: 8%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
-/* section:nth-of-type(1) article:nth-of-type(3) {
+.ordernow button{
+	background-color: var(--color-bg-header);
+	color: white;
+	padding: 1.5em;
+	border-radius: 3em;
+	text-transform: uppercase;
+	font-size: small;
+	font-family: 'Dunkin';
+	padding-left: 9em;
+	padding-right: 9em;
+	border: none;
+}
 
-} */
+.popup {
+	display: none; 
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-8em) translateX(-10.6em);
+	width: 300px;
+	background-color: var(--color-headings1);
+	padding: 20px;
+	border-radius: 2em;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	z-index: 5;
 
+}
 
+.popup a {
+	background-color: var(--color-bg-header);
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+	padding: 0.6em;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	border-radius: 1.5em;
+	margin-right: 2em;
+	margin-left: 2em;
+}
+
+.popup h2 {
+	margin-top: 1em;
+	color: white;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+.popup p {
+	color: white;
+	text-align: center;
+}
+	
+.popup-background {
+	display: none; 
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 5;
+}
+
+.close-btn {
+	background-color: var(--color-bg-header);
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	float: right;
+	border-radius: 0.5em;
+}
 
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
+
+/* *, *::after, *::before {
   box-sizing:border-box;  
-}
-
-
-
-
+} */
 
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
+/* :root { */
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
-
-
-
-
+	/* --color-text:#111;
+	--color-background:#eee; */
+/* } */
 
 /****************/
 /* JOUW STYLING */
@@ -722,37 +753,43 @@ padding-right: 1em;
 
 /* jouw code */
 
-
-
-
-
-
-
-
 .nav2 {
 	background-color: white;
-	margin: -1.5em -1.8em 0em -1.5em;
-	padding: 1.5em;
+	padding: 1.4em;
+	padding-right: 9.91em;
+	margin: -1.5em;
+	position: relative;
+	z-index: 3;
 }
 
 .nav2 :nth-child(2) {
 	transform: translateX(8em);
 }
 
-
-
-
-
-.intro img {
-margin: 0em -1.5em -1.5em -1.5em;
-filter:brightness(60%) ;
+.body {
+	margin: 1.5em;
 }
 
-.intro p {
+.intro {
+	overflow: hidden;
+	margin: -1.5em;
+}
+
+.intro img {
+	filter:brightness(60%) ;
+	width: 170%;
+	left: 0em;
+}
+
+.intro h2 {
 	transform: translateY(-10em);
 	color: white;
 	font-family: 'Dunkin';
 	font-size: 2em;
+	text-transform: capitalize;
+	line-height: 1.5em;
+	letter-spacing: 0.01em;
+	word-spacing: -0.2em;
 }
 
 .werk h1{
@@ -762,6 +799,12 @@ filter:brightness(60%) ;
 	text-align: center;
 	line-height: 1.2em;
 	word-spacing: -0.3em;
+}
+
+.werk p {
+	margin: 1em 0.1em;
+	font-weight: 100em;
+	
 }
 
 .intro {
@@ -779,12 +822,10 @@ filter:brightness(60%) ;
 
 .quote {
 	padding-top: 1em;
-	
 	font-family: 'Dunkin';
 	color:#C63663 ;
 	font-family: 'Dunkin';
 	font-size: 900;
-	
 }
 
 .werk p {
@@ -808,20 +849,14 @@ filter:brightness(60%) ;
 	margin: 2em 5em 2em 5em;
 }
 
-
 .images {
-	display: flex;
-	
-}
-
-.smallimg {
-	padding: 1em;
-	
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
 
 .bigimg {
-	
 	object-fit: cover;
+	overflow: hidden;
 }
 
 .rooster {
@@ -831,10 +866,11 @@ filter:brightness(60%) ;
 
 .rooster h2 {
 	color: #C63663 ;
-	text-transform: lowercase;
+	text-transform:capitalize;
 	font-family: "Dunkin-sans-2";
 	font-size: 1.5em;
 	font-weight: 100;
+	margin-top: 2em;
 	text-align: center;
 	line-height: 1.5em;
 }
@@ -865,7 +901,6 @@ filter:brightness(60%) ;
 	margin-top: 2.6em;
 	font-family:"Dunkin-sans-2"; 
 	line-height: 1.4em;
-	
 }
 
 .vacatures p {
@@ -894,12 +929,9 @@ filter:brightness(60%) ;
 	border-radius: 0.3em;
 }
 
-
-
 .border-a1 {
 	text-decoration: none;
-	color:rgb(239, 106, 0)  ;
-
+	color:rgb(239, 106, 0);
 }
 
 .barista {
@@ -912,7 +944,6 @@ filter:brightness(60%) ;
 	display: flex;
 	font-weight: 100;
 }
-
 
 .barista img {
 	width: 5%;
@@ -942,8 +973,7 @@ filter:brightness(60%) ;
 .footer {
 	background-color: #3c332e;
 	padding-top: 4em;
-	margin: 3em -2em -1.5em -1.5em;
-	
+	margin: 3em -1.5em -1.5em -1.5em;	
 }
 
 .center img {
@@ -954,7 +984,6 @@ filter:brightness(60%) ;
 	align-items: center;
 	flex-direction: column;
 	display: flex;
-	
 }
 
 .center a{

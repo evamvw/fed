@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Eva van Wissen">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Howdy FED2425</title>
+	<title>Dunkin Donuts</title>
 
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -15,7 +15,7 @@
 
 <body>
 	
-	<header>
+	<header class="header">
 		<p>Dunkin in opzoek naar jou! Bekijk onze <a href="home.html">vacatures</a></p>
 		
 		<nav>
@@ -56,7 +56,7 @@
 	
 
 		<article class="welovecoffee">
-			<h2>We love <br>coffee<br> </h2>
+			<h2 class="h2">We love <br>coffee<br> </h2>
 			<img src="images/koffie2.pmg.png" alt="Dunkin glas met koffie" width="30">
 			<img src="images/koffie2.pmg.png" alt="Dunkin glas met koffie" width="30">
 			<img class="coffeeimg" src="images/coffee1.png" alt="Dunkin glas met koffie" width="">
@@ -66,20 +66,20 @@
 
 		<div class="greybg">
 			<article class="bestel">
-				<h2>bestel!</h2>
+				<h2 class="h2">bestel!</h2>
 				<p>maak een keuze:</p>
 				<a href="home.html"> bezorgen</a>
 				<a href="home.html"> afhalen</a>
 			</article>
 
 			<article class="nieuw">
-				<h2>nieuw</h2>
+				<h2 class="h2">nieuw</h2>
 				<img src="images/donuts.png" alt="Dunkin donuts" width="328em">
 			</article>
 
 
 
-			<h1>Bestel <br> <span class="orange">Dunkin'</span> <br>Online</h1>
+			<h2 class="h2-opmaak">Bestel <br> <span class="orange">Dunkin'</span> <br>Online</h2>
 			<article class="list">
 				<ol>
 					<li>
@@ -140,7 +140,7 @@
 			</article>
 
 			<article class="appjijm">
-				<h2> App jij m' al? </h2>
+				<h2 class="h2"> App jij m' al? </h2>
 				<h3>de dunkin app</h3>
 				<P>Lekker scoren met exclusieve coupons en leuke campagnes met winactie.</P>
 				<img src="images/Appstore.png" alt="Available on the appstore boordje" width="210em">
@@ -167,7 +167,7 @@
 		</article>
 
 		<section class="ddnieuws">
-			<h1> <span class="orange">DD</span> <br>nieuws</h1>
+			<h2 class="h2-opmaak"> <span class="orange">DD</span> <br>nieuws</h2>
 			<div class="scrol">
 				<article class="batavianews">
 					<img src="images/bataviastad2-png.png" alt="heropening bataviastad" width="300">
@@ -183,7 +183,7 @@
 		</section>
 
 		<article class="storefinder">
-			<h2>store<br>finder</h2>
+			<h2 class="h2">store<br>finder</h2>
 			<img class="map" src="images/map.png" alt="Map van Nederland" width="260em">
 			<img class="badge" src="images/badge.png" alt="Dunkin logo" width="90em">
 			<h3>vind een dunkin <br>in de buurt</h3>
@@ -245,9 +245,19 @@
 
 
 	<div class="ordernow">
-		<a href="home.html">Order now</a>
-
+		<button onclick="openPopup()" href="home.html">Order now</button>
 	</div>
+
+	<div class="popup-background" id="popupBackground"></div>
+
+	<div class="popup" id="popup">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <h2>Krijg nu een donut gratis!</h2>
+        <p>Voor de komende 24 uur is jouw tweede donut gratis!</p>
+		<a href="home.html">Bestel een donut</a>
+    </div>
+
+
 
 	<script defer src="scripts/script.js"></script>
 </body>

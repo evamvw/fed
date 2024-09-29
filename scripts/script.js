@@ -2,6 +2,8 @@
 
 // Voor de onderstaande code heb ik hulp gehad van Andrea, Ali en Codepen. 
 
+
+
 const hamburgerMenu = document.getElementById('hamburgerMenu')
 const menu = document.querySelector('header nav article')
 

@@ -40,12 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-    <img src="images-readme/eerstescherm.png" width="375px" alt="Homepagina van Dunkin">
+    <img src="images-readme/eerstescherm.png" width="200px" alt="Homepagina van Dunkin">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="images-readme/tweedescherm1.png" width="375px" alt="Werken bij Dunkin">
-  <img src="images-readme/tweedescherm2.png" width="375px" alt="Werken bij Dunkin">
+  <img src="images-readme/tweedescherm1.png" width="200px" alt="Werken bij Dunkin">
+  <img src="images-readme/tweedescherm2.png" width="200px" alt="Werken bij Dunkin">
  
 </details>
 
@@ -88,13 +88,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images-readme/breakdownschets1.png" width="200px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="images-readme/breakdownschets2.png" width="200px" alt="breakdown van hamburger menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="images-readme/breakdownschets3.png" width="200px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -124,7 +124,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+  (Ons groepje heeft dit niet besproken)
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -148,7 +148,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-   <img src="images-readme/stand-van-zaken.png" width="375px" alt="Hoe mijn website er nu uit ziet">
+   <img src="images-readme/stand-van-zaken.png" width="200px" alt="Hoe mijn website er nu uit ziet">
 
   - In een van de lessen heb ik nog hulp kunnen krijgen met het inladen van de juiste font. Ik heb alleen nu het probleem dat het font niet dunner wordt. 
   - Toen ik het juiste font in mijn site zette, kwamen twee linkjes onder elkaar te staan in plaats van naast elkaar zoals dat vorheen was. Hoe verander ik dit? 
@@ -164,7 +164,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+  (Ons groepje heeft dit niet besproken)
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -186,7 +186,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+- Screenreader: 
+   - Zegt bij elke link “Bezocht link”
+   - Benoemd ook articles
+   - Gaat alleen maar linkjes af
+   - Noemt alt af bij alles 
+   - Met automatisch gaat die alles af (ook images_)
+
+  - WCAG checklist
+    - Alle images hebben een alt 
+    - Keyboard focus gaat alle elementen op de juiste volgorde af
+    - Headings worden logisch gebruikt
+    - List elementen worden goed met de <list> tag aangegeven
+    - Voor linkjes zijn <a> tags op de juiste manier gebruikt
+    - Buttons zijn ook goed gebruikt
+    - Dark-light mode werkt
+    - Animaties zijn subtiel 
+    - Voor de hoofdkleuren is gebruikt gemaakt van costum properties
 
 </details>
 
@@ -220,7 +236,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+  (Ons groepje heeft dit niet besproken)
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -245,50 +261,50 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="images-readme/homescreen1.png" width="375px" alt="Layout van de homepagina">
+  <img src="images-readme/homescreen1.png" width="200px" alt="Layout van de homepagina">
 
-  <img src="images-readme/homescreen2.png" width="375px" alt="layout van de homepagina">
+  <img src="images-readme/homescreen2.png" width="200px" alt="layout van de homepagina">
 
-  <img src="images-readme/homescreen3.png" width="375px" alt="layout van de homepagina">
+  <img src="images-readme/homescreen3.png" width="200px" alt="layout van de homepagina">
 
-  <img src="images-readme/homescreen4.png" width="375px" alt="layout van de homepagina">
+  <img src="images-readme/homescreen4.png" width="200px" alt="layout van de homepagina">
 
-  <img src="images-readme/homescreen5.png" width="375px" alt="layout van de homepagina">
+  <img src="images-readme/homescreen5.png" width="200px" alt="layout van de homepagina">
 
-   <img src="images-readme/hamburgermenu.png" width="375px" alt="hamburger menu">
+   <img src="images-readme/hamburgermenu.png" width="200px" alt="hamburger menu">
    
-  <img src="images-readme/werken.png" width="375px" alt="intro van tweede pagina">
-  <img src="images-readme/werken2.png" width="375px" alt="layout tweede pagina">
+  <img src="images-readme/werken.png" width="200px" alt="intro van tweede pagina">
+  <img src="images-readme/werken2.png" width="200px" alt="layout tweede pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
   - Aan het begin van dit vak had ik nog een beetje moeite met de opmaak van alle blokken op de homepagina. Maar na veel proberen en oefenen lukte mij dit steeds beter en sneller. Ik heb bijvoorbeeld geleerd hoe je makkelijk elementen kan centreren. Hierbij ben ik ook beter gaan begrijpen hoe de plaatsing van elementen werken (margin, padding, border. Maar ook met transform, flex, grid, etc). 
 
-  <img src="images-readme/homescreen1.png" width="375px" alt="Layout van de homepagina">
+  <img src="images-readme/homescreen1.png" width="200px" alt="Layout van de homepagina">
 
-  <img src="images-readme/homescreen2.png" width="375px" alt="layout van de homepagina">
+  <img src="images-readme/homescreen2.png" width="200px" alt="layout van de homepagina">
 
-  <img src="images-readme/homescreen3.png" width="375px" alt="layout van de homepagina">
+  <img src="images-readme/homescreen3.png" width="200px" alt="layout van de homepagina">
 
-  <img src="images-readme/homescreen4.png" width="375px" alt="layout van de homepagina">
+  <img src="images-readme/homescreen4.png" width="200px" alt="layout van de homepagina">
 
-  <img src="images-readme/homescreen5.png" width="375px" alt="layout van de homepagina">
+  <img src="images-readme/homescreen5.png" width="200px" alt="layout van de homepagina">
 
-  <img src="images-readme/footer.png" width="375px" alt="footer">
+  <img src="images-readme/footer.png" width="200px" alt="footer">
 
    - Ook heb ik geleerd hoe costum properties/ light-dark-mode werkt. Dit vond ik eerst lastig, maar nadat ik hier wat vragen over had gesteld, begreep ik het en ging het toevoegen hiervan ook goed. Ook heb ik geleerd hoe je met svg-images om moet gaan en hoe je deze kan stijlen en animeren. Het dowloaden van fonts is me ook een stuk duidelijker geworden. Ik begrijp nu veel beter hoe je deze in je html/css zet en hoe je deze bewerkt. 
 
-  <img src="images-readme/light-dark.png" width="375px" alt="Light-dark">
+  <img src="images-readme/light-dark.png" width="200px" alt="Light-dark">
 
-  <img src="images-readme/svg-voorbeeld.png" width="375px" alt="geanimeerde svg">
+  <img src="images-readme/svg-voorbeeld.png" width="200px" alt="geanimeerde svg">
 
-  <img src="images-readme/fonts.png" width="375px" alt="verschillende fonts">
+  <img src="images-readme/fonts.png" width="200px" alt="verschillende fonts">
 
 
   - Verder heb ik bij dit vak heel veel geleerd over animaties, transitions, JS, audio, etc. Soms gingen sommige dingen niet helemaal goed, maar met hulp in de les of onderzoek op het internet ben ik er bij de meeste dingen wel uitgekomen. 
 
- <img src="images-readme/animatie.png" width="375px" alt="ronddraaiende animatie">
+ <img src="images-readme/animatie.png" width="200px" alt="ronddraaiende animatie">
 
-<img src="images-readme/popup.png" width="375px" alt="pop-up">
+<img src="images-readme/popup.png" width="200px" alt="pop-up">
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -296,23 +312,18 @@ Er zijn helaas ook wat dingen niet gelukt, namelijk:
 
 - een scrol-animatie. Ik heb van de docent een linkje gekregen van een site waar helemaal wordt uitgelegd hoe je dit zou moeten maken. Ik heb van alles geprobeerd, maar het bleef maar mislukken. Ook met verder onderzoek ben ik er niet uitgekomen. Uiteindelijk heb ik besloten om dit te laten en deze te vervangen met een ander surface-plane onderwerp, namelijk een pop-up. 
 
-<img src="images-readme/fadecode.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+<img src="images-readme/fadecode.png" width="200px" alt="de mislukte code voor een fade-scrol effect">
 
-<img src="images-readme/fadecode1.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+<img src="images-readme/fadecode1.png" width="200px" alt="de mislukte code voor een fade-scrol effect">
 
-<img src="images-readme/fadecode2.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+<img src="images-readme/fadecode3.png" width="200px" alt="de mislukte code voor een fade-scrol effect">
 
-<img src="images-readme/fadecode3.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
-
-<img src="images-readme/fadecode4.png" width="375px" alt="de mislukte code voor een fade-scrol effect">
+<img src="images-readme/fadecode4.png" width="200px" alt="de mislukte code voor een fade-scrol effect">
 
 - Ook is het me helaas niet gelukt om het bovenste balkje op mijn site mee te laten bewegen met de scrol richting. Ook hier heb ik van de docent een codepen linkje gekregen. Toen dit eerst niet lukte, was ik erachter gekomen dat ik de p van de <nav> naar de <header> moest verplaatsen. Na heel veel verschuiven en proberen heb ik deze uiteindelijk op de goede plek gekregen. Maar het mee scrollen van deze balk is me uiteindelijk helaas niet gelukt. Bij het toevoegen hiervan, verschoof de balk of deed die niks. Wel pakte die soms de "order now" balk onderin. 
 
-<img src="images-readme/header.png" width="375px" alt="header en het oranje balkje dat mee moest schuiven">
+<img src="images-readme/header.png" width="200px" alt="header en het oranje balkje dat mee moest schuiven">
 
-- Helaas is het me ook niet gelukt om de foto's op de tweede pagina niet te laten vervormen. Ik heb gebruikt gemaakt van object-fit, overlay:hidden, grid, en nog meer. Maar de foto's bleven vervormd. 
-
-<img src="images-readme/fotogroepx.png" width="375px" alt="vervormde foto's">
 </details>
 
 
@@ -339,6 +350,8 @@ Er zijn helaas ook wat dingen niet gelukt, namelijk:
   Voor het maken van een hamburger menu 
   7. https://dlo.mijnhva.nl/d2l/le/content/609314/Home
   Voor codepen opdrachten. 
+  8. https://chatgpt.com/c/66f18f0c-0c7c-8002-b01f-84ce933cd22d
+  Voor animatie en vormgeving. 
   
 
 </details>

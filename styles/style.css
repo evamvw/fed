@@ -22,8 +22,6 @@
 	--color-welovecoffee:#ddbd8e;
 	--color-p: #000000;
 
-	--bg:light-dark:(white);
-	--clr: light-dark:(black);
 }
 
 html:has([value="light"]:checked) {
@@ -57,20 +55,23 @@ p {
     top:0;
 	left: 0;
 	z-index: 3;
-
 }
 
 nav {
 	background-color: rgb(255, 255, 255);
-	border: solid, rgb(247, 247, 247), ;
+	border: solid rgb(247, 247, 247);
 	/* top: calc(-113.5/16 * 1rem); */
+	margin-right: -1em ;
 }
 
 nav ul li button {
 	background-color: white;
 	border: none;
-	size: 2em;
-	transform: translateX(-1em);
+	transform: translateX(-0.7em);
+}
+
+nav ul li button img {
+	width: 4em;
 }
 
 header p {
@@ -82,8 +83,8 @@ header p {
 	display: flex;
 	position: relative;
 	padding: 1em;
-	padding-right: 6em;
 	margin: 0em;
+	padding-right: 7em;
 }
 
 header p a{
@@ -91,24 +92,44 @@ header p a{
 	padding-left: 0.5em;
 }
 
-nav ul {
+nav ul{
 	list-style-type: none;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 
+nav ul li img {
+	margin-left: -3em;
+	width: 3.5em;
+}
+
+#logo {
+	width: 9em;
+	padding-left: 1em;
+}
+
 nav ul li {
-	padding-left: 4em;
-	padding-right: 4em;
-	margin-left: -5em;
-	padding-top: 0.5em;
+	padding-top: 0em;
+}
+
+li h1 {
+	color:#FF6E0C;
+	text-transform: uppercase;
+	font-size: 2em;
+	margin-left: -1em;
+	margin-bottom: -1em;
+	margin-top: -0.8em;
+}
+
+li h1 span {
+	color: #f20C90;
 }
 
 .hamburger{
 	background-color: rgb(253, 253, 253);	
 	position: absolute;
-	top: 20;
+	top: 7.4em;
 	z-index: 5;
 	width: 100vw;
 	height: 100vh;
@@ -125,7 +146,7 @@ nav ul li {
 	text-transform: uppercase;
 	font-size: 2em;
 	font-family: 'Dunkin';
-	padding-left: 1.3em;
+	padding-right: 1.2em;
 }
 
 .hamburger div {
@@ -140,21 +161,16 @@ nav ul li {
 	border-top-left-radius: 150px 50px;
 }
 
-/* .hamburger button {
-	background-color: rgb(240, 240, 240);
-	color: blaCK;
-	border: none;
-	transform: translateY(-4.1em) translateX(22.9em);
-	padding: 0.6em 1.4em;
-	border-radius: 2em;
-} */
-
 .hamburger div a{
 	background-color: white;
-	padding: 0.5em;
+	padding: 0.4em;
 	padding-left: 0.7em;
 	padding-right: 0.7em;
 	border-radius: 8em;
+}
+
+.hamburger  div a img {
+	width: 1.3em;
 }
 
 .hamburger div a:nth-of-type(1) {
@@ -163,23 +179,16 @@ nav ul li {
 
 .hamburger div a:nth-of-type(2) {
 	margin-right: 1em;
+	padding-top: 0.5em;
 }
-
 .hamburger div a:nth-of-type(3) {
- padding-left: 1em;
- padding-right: 1em;
+	margin-right: 1em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
 }
-
-/* header nav article ul li {
-	color: #111;
-} */
 
 nav article.active {
 	transform: translateY(0);
-}
-
-label {
-	background-color: none;
 }
 
 .h2 {
@@ -199,7 +208,7 @@ label {
 	border-radius: 1.5em;
 	margin-bottom: -1em;
 	padding-bottom:2em ;
-	margin-top: 11em;
+	margin-top: 10em;
 	justify-items: center;	
 	overflow: hidden;
 	object-fit: contain;
@@ -212,6 +221,7 @@ label {
 
 .welovecoffee img:nth-of-type(1) {
 	transform: translateX(4em) translateY(1em) scale(4);
+	width: 2em;
 }
 
 .welovecoffee img:nth-of-type(3) {
@@ -219,17 +229,13 @@ label {
 	object-fit: contain;
     height: 10em;
 	z-index: 1;
+	width: 4.5em;
 }
 
 .welovecoffee img:nth-of-type(2) {
 	transform: translateX(12em) translateY(1.1em) scale(4);
-
+	width: 2em;
 }
-
-/* .h1 {
-	font-size: 3.5em;
-	line-height: 1em;
-} */
 
 .greybg {
 	background-color: #0000000a;
@@ -288,6 +294,7 @@ label {
 .nieuw img {
 	transform: translateY(0.3em);
 	border-radius: 1.5em;
+	width: 20.5em;
 }
 
 .h2-opmaak {
@@ -416,6 +423,7 @@ ol {
 
 .appjijm img {
 	transform: translateY(0.35em);
+	width: 13em;
 }
 
 .orange {
@@ -424,6 +432,14 @@ ol {
 
 .bataviastad {
 	margin-top: 7em;
+}
+
+.bataviastad img {
+	width: 20.2em;
+}
+
+.orangesticker img {
+	width: 4.5em;
 }
 
 .bataviastad h3 {
@@ -484,7 +500,6 @@ ol {
 
 .ddnieuws h2 {
 	padding-top: 0.5em;
-	padding-bottom: -2em;
 }
 
 .scrol {
@@ -495,7 +510,7 @@ ol {
 .batavianews {
 	padding: 0.5em;
 	margin: 1.5em;
-	border: solid, #ececec, 4px;
+	border: solid #ececec 4px;
 	border-radius: 1em;
 }
 
@@ -516,6 +531,10 @@ ol {
 	padding-right: 1em;
 }
 
+.batavianews img {
+	width: 20em;
+}
+
 .storefinder {
 	color: white;
 	background-color: var(--color-headings1);
@@ -528,18 +547,19 @@ ol {
 }
 
 .map {
-	border: solid, white, 10px;
+	border: solid white 10px;
 	border-radius: 50%;
 	margin-bottom: -6em;
 	margin-top: 0em;
+	width: 16em;
 }
 
 .badge {
 	border: none;
 	border-radius: 50%;
-	transform: translateX(9em) translateY(-8.7em);
-	rotate: -20deg;
+	transform: translateX(5em) translateY(-11.5em) rotate(-22deg);
 	box-shadow: 1px 5px 5px #1111115c;
+	width: 6.5em;
 }
 
 .storefinder h3 {
@@ -608,7 +628,6 @@ ol {
 .footerhome div a img {
 	height: 2em;
 	width: 2em;
-	padding-top: -2em;
 }
 
 
@@ -729,30 +748,6 @@ ol {
 	border-radius: 0.5em;
 }
 
-/**************/
-/* CSS REMEDY */
-/**************/
-
-/* *, *::after, *::before {
-  box-sizing:border-box;  
-} */
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-/* :root { */
-	/* startje */
-	/* --color-text:#111;
-	--color-background:#eee; */
-/* } */
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
 .nav2 {
 	background-color: white;
 	padding: 1.4em;
@@ -763,7 +758,12 @@ ol {
 }
 
 .nav2 :nth-child(2) {
-	transform: translateX(8em);
+	transform: translateX(8em) translateY(0.1em);
+	width: 2em;
+}
+
+.nav2 img {
+	width: 9em;
 }
 
 .body {
@@ -803,7 +803,7 @@ ol {
 
 .werk p {
 	margin: 1em 0.1em;
-	font-weight: 100em;
+	font-weight: 100;
 	
 }
 
@@ -825,7 +825,7 @@ ol {
 	font-family: 'Dunkin';
 	color:#C63663 ;
 	font-family: 'Dunkin';
-	font-size: 900;
+	font-size: 1em;
 }
 
 .werk p {
@@ -854,9 +854,17 @@ ol {
 	grid-template-columns: 1fr 2fr;
 }
 
-.bigimg {
+.bigimg img{
 	object-fit: cover;
-	overflow: hidden;
+	width: 13em;
+	height: 13em;
+}
+
+.smallimg img{
+	object-fit: cover;
+	width: 6.4em;
+	height: 6.4em;
+	margin-left: 0.1em;
 }
 
 .rooster {
@@ -888,6 +896,7 @@ ol {
 
 .rooster img {
 	margin-top: 2em;
+	width: 8em;
 }
 
 .vacatures {
@@ -923,7 +932,7 @@ ol {
 }
 
 .border {
-	border: solid, gray, 0.8px;
+	border: solid gray 0.8px;
 	margin-top: 4em;
 	padding: 1.5em;
 	border-radius: 0.3em;
@@ -978,6 +987,7 @@ ol {
 
 .center img {
 	margin-bottom: 3em;
+	width: 9em;
 }
 
 .center {
@@ -1005,27 +1015,30 @@ ol {
 	padding: 0.5em;
 }
 
+.socials img {
+	width: 1.3em;
+}
 
 
-.fade {
-	/* transform: translateY(50px);
+/* .fade {
+	transform: translateY(50px);
 	opacity: 0;
 	transition-property: transform, opacity;
 	transition-duration: 1s;
 	transition-timing-function: linear;
-	transition: opacity 0.6s ease-in-out; */
+	transition: opacity 0.6s ease-in-out;
 
 	transform: translateY(50px); 
     opacity: 0; 
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out; 
-}
+} */
 
-.fade.in-view {
-	/* transform: none;
-	opacity: 1; */
+/* .fade.in-view {
+	transform: none;
+	opacity: 1;
 	transform: translateY(0); 
     opacity: 1;
-}
+} */
 
 
 
